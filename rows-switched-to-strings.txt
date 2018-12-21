@@ -1,0 +1,7 @@
+Rows switched to string
+
+Address at diagnosis Postal code (some postal codes blank, some with letters--Canadian?)
+Address current postal code
+Cause of death (some have letters; 3 fields)
+Secondary diagnosis 1 (typically w/ letters in it)
+Currentcounty

@@ -1,0 +1,50 @@
+Operation stopped...
+
+- Initializing Data Flow Task (Success)
+
+- Initializing Connections (Success)
+
+- Setting SQL Command (Success)
+
+- Setting Source Connection (Success)
+
+- Setting Destination Connection (Success)
+
+- Validating (Success)
+
+- Prepare for Execute (Success)
+
+- Pre-execute (Success)
+	Messages
+	* Information 0x402090dc: Data Flow Task 1: The processing of file "\\nydc-profile1.dbmi.columbia.edu\cancer_registry\BEN_TUMORREG_2016.csv" has started.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Executing (Success)
+
+- Copying to [rc3179].[cancer_registry30K_4repl] (Stopped)
+	Messages
+	* Error 0xc02020a1: Data Flow Task 1: Data conversion failed. The data conversion for column "COUNTYCURRENT" returned status value 2 and status text "The value could not be converted because of a potential loss of data.".
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0209029: Data Flow Task 1: SSIS Error Code DTS_E_INDUCEDTRANSFORMFAILUREONERROR.  The "Source - BEN_TUMORREG_2016_csv.Outputs[Flat File Source Output].Columns[COUNTYCURRENT]" failed because error code 0xC0209084 occurred, and the error row disposition on "Source - BEN_TUMORREG_2016_csv.Outputs[Flat File Source Output].Columns[COUNTYCURRENT]" specifies failure on error. An error occurred on the specified object of the specified component.  There may be error messages posted before this with more information about the failure.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0202092: Data Flow Task 1: An error occurred while processing file "\\nydc-profile1.dbmi.columbia.edu\cancer_registry\BEN_TUMORREG_2016.csv" on data row 31261.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0047038: Data Flow Task 1: SSIS Error Code DTS_E_PRIMEOUTPUTFAILED.  The PrimeOutput method on Source - BEN_TUMORREG_2016_csv returned error code 0xC0202092.  The component returned a failure code when the pipeline engine called PrimeOutput(). The meaning of the failure code is defined by the component, but the error is fatal and the pipeline stopped executing.  There may be error messages posted before this with more information about the failure.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Post-execute (Success)
+	Messages
+	* Information 0x402090dd: Data Flow Task 1: The processing of file "\\nydc-profile1.dbmi.columbia.edu\cancer_registry\BEN_TUMORREG_2016.csv" has ended.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination - cancer_registry30K_4repl" wrote 31084 rows.
+	 (SQL Server Import and Export Wizard)
+	
+
+
+
